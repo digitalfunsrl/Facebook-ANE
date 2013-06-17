@@ -1,0 +1,20 @@
+<platform xmlns="http://ns.adobe.com/air/extension/3.7"> 
+    <description>An optional description.</description> 
+    <copyright>2013 (optional)</copyright> 
+    <sdkVersion>6.1</sdkVersion> 
+	<linkerOptions> 
+		<option>-w</option>
+        <option>-weak_framework Social</option>
+		<option>-weak_framework Accounts</option>
+		<option>-weak_framework AdSupport</option>
+		<option>-weak_framework Security</option>
+		<option>-weak_framework Foundation</option>
+    </linkerOptions>
+    <!--<packagedDependencies>
+		<packagedDependency>Accounts.framework</packagedDependency> 
+		<packagedDependency>Social.framework</packagedDependency> 
+		<packagedDependency>AdSupport.framework</packagedDependency> 
+		<packagedDependency>Security.framework</packagedDependency> 
+        <packagedDependency>FacebookSDK.framework</packagedDependency> 
+    </packagedDependencies>-->
+</platform>

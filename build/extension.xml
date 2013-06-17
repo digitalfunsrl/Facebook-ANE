@@ -1,0 +1,26 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.7"> 
+    <id>com.digitalfun.pingback</id> 
+    <versionNumber>0.0.1</versionNumber> 
+    <platforms> 
+         <platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>pingback.jar</nativeLibrary>
+                <initializer>com.digitalfun.pingback.Pingback</initializer>
+            </applicationDeployment> 
+        </platform> 
+		<platform name="iPhone-ARM"> 
+            <applicationDeployment> 
+                <nativeLibrary>libairpingback.a</nativeLibrary> 
+                <initializer>PingBackExtInitializer</initializer>
+				<finalizer>PingBackExtFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+ 
+ <!--
+        <platform name="default">
+            <applicationDeployment/>
+        </platform>
+ -->
+
+    </platforms> 
+</extension>
