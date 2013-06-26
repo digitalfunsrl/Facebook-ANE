@@ -5,11 +5,11 @@ Facebook Adobe Air Extension
 
 This extension is meant to help programmers, using the Facebook native iOS/Android SDK on mobile applications, created using Adobe Air.
 The result of this work is an ANE file, which will be included inside the application and will need this code to be used:
-
+```
 import com.digitalfun.pingback.PingBack;
 
 var pb:PingBack = new PingBack();
-
+```
 Android Facebook SDK include step-by-step:
 ==========================================
 
@@ -23,7 +23,9 @@ After you're done with the programming, you'll need to export your project as a 
 
 The tool essentially runs two commands:
 
-jar -xf facebooksdk.jar
-jar -uf pingback.jar com
+```	
+	jar -xf facebooksdk.jar 
+	jar -uf pingback.jar com
+```
 
 the first one gets the "com" directory out of the facebooksdk.jar, the second one includes it in the pingback.jar file.
